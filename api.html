@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News API</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">Daily<span>News</span></div>
+            <form class="searchbar" id="search-form">
+                <input type="text" placeholder="Search news..." id="input" aria-label="Search news">
+                <button type="submit" id="btn">Search</button>
+            </form>
+        </header>
+
+        <main>
+            <h1>Latest News</h1>
+            <section id="container" aria-live="polite"></section>
+        </main>
+
+        <script src="./api.js"></script>
+    </body>
+</html>
